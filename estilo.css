@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&family=Platypi:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200; 0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sofia&display=swap')
+*{
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5d0773;
+    height: 100px;
+    text-align: center;
+}
+
+header h1{
+    font-size: 60px;
+    color: whitesmoke;
+    font-family: "Platypi", serif; 
+    font-weight: normal;
+}
+
+.hero, 
+.modelos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+     /* border: 1px solid #5d0773;  */
+}
+
+.box-img {
+    display: flex;
+    justify-content: center;
+    width: 35%;
+    /* border: 1px solid #5d0773;  */
+
+}
+
+.box-txt {
+    display: flex;
+    flex-flow: row wrap;
+    width: 35%;
+     /* border: 1px solid green;  */
+}
+.box-txt span {
+    color: gray;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.box-txt h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 70px;
+    color: #ba74cc;
+    font-weight: 800px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 70px;
+}
+
+.box-txt p{
+    color: gray;
+    justify-content: center;
+}
+
+   
+ 
+.btn-hero{
+    background: #ba74cc;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    border-radius: 5px;
+    transition: 0.5s all;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.btn-hero:hover {
+    background:#a331c0;
+    font-size: 18px;
+
+}
+
+
+.box-item{
+    width: 25%;
+    height: 550px;
+    background-color: #e4bbee;
+    margin: 5px;
+    padding: 1px 10px;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+@media  screen and (max-width: 1200px) {
+    .hero {
+        flex-direction: column-reverse;
+    }
+    .box-txt{
+        flex-flow: column wrap;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 30px;
+    }
+    .box-txt h2{
+        font-size: 60px;
+    }
+    .box-txt{
+        text-align: center;
+    }
+    .box-img{
+        width: 100%;
+        margin-bottom: 40px;
+    }        
+    .box-item{
+        width: 95%;
+    }
+    footer{
+        font-size: 18px;
+        text-align: center;
+    }
+    
+}
+
+
+
+
+
+    
+
